@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <img src="assets/483c2aaa-52aa-42ee-b40a-fddb9c34edcf.png" alt="Top Right Asset" style="position: fixed; top: 25px; right: 30px; height: 75px; z-index: 9999;">
     <div class="top-bar">
         <div class="top-bar-content container">
             <div class="contact-info">
@@ -24,7 +27,8 @@
     <header class="main-header">
         <div class="container header-container">
             <div class="logo">
-                <a href="index.html"><img src="assets/dadwork.png" alt="Mike Sperduti" style="height: 80px; margin-top: -20px;"></a>
+                <a href="index.html"><img src="assets/complogojr.png" alt="Mike Sperduti Companies"
+                        style="height: 75px; margin-top: -15px;"></a>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -36,33 +40,84 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div class="right-asset" style="display: flex; align-items: center;">
+                <img src="assets/483c2aaa-52aa-42ee-b40a-fddb9c34edcf.png" alt="Top Right Asset"
+                    style="height: 75px; margin-top: -15px;">
+            </div>
         </div>
     </header>
 
-    <section class="page-header" style="padding: 140px 0 60px; background-color: #f4f7f6; text-align: center;">
+    <section class="page-header"
+        style="padding: 140px 0 60px; background: linear-gradient(to right, #ae00ff 0%, #ae00ff 20%, #f97316 20%, #f97316 40%, #0b1d3a 40%, #0b1d3a 60%, #fcd34d 60%, #fcd34d 80%, #ec4899 80%, #ec4899 100%); text-align: center;">
         <div class="container">
-            <h1 style="color: #0b1d3a; font-family: 'Playfair Display', serif; font-size: 3rem;">Executive Team</h1>
+            <h1 style="color: #ffffff; font-family: 'Playfair Display', serif; font-size: 3rem;">Executive Team</h1>
         </div>
     </section>
 
     <section class="page-content container" style="padding: 60px 0; min-height: 40vh; text-align: center;">
         <h2>Meet Our Leaders</h2>
         <p style="margin-top:20px;">Dedicated professionals driving success across all our brands.</p>
-        <div style="display: flex; gap: 30px; justify-content: center; margin-top: 50px; flex-wrap: wrap;">
-            <div style="width: 250px;">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300" alt="Executive 1" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
-                <h3 style="margin-top:15px; color:#0582ca;">Jane Doe</h3>
-                <p>Chief Operating Officer</p>
+        <div style="display: flex; flex-direction: column; gap: 40px; align-items: center; margin-top: 50px;">
+            <!-- Row 1 -->
+            <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                <div style="width: 250px; border: 2px solid #0b1d3a; border-radius: 15px; padding: 20px; box-sizing: border-box; background-color: #ffffff; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;"
+                    onclick="window.location.href='mailto:mike.sperduti@emergesales.com'"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px #0b1d3a'"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                    <img src="assets/dad.png" alt="Mike Sperduti"
+                        style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
+                    <h3 style="margin-top:15px; color:#0582ca;">Mike Sperduti</h3>
+                    <p>CEO</p>
+                </div>
+                <div style="width: 250px; border: 2px solid #f97316; border-radius: 15px; padding: 20px; box-sizing: border-box; background-color: #ffffff; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;"
+                    onclick="window.location.href='mailto:karen.sperduti@emergesales.com'"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px #f97316'"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                    <img src="assets/karen.jpg" alt="Karen Sperduti"
+                        style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                    <h3 style="margin-top:15px; color:#0582ca;">Karen Sperduti</h3>
+                    <p>Vice President</p>
+                </div>
             </div>
-            <div style="width: 250px;">
-                <img src="assets/dad.png" alt="Executive 2" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
-                <h3 style="margin-top:15px; color:#0582ca;">Mike Sperduti</h3>
-                <p>CEO</p>
+            <!-- Row 2 -->
+            <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                <div style="width: 250px; border: 2px solid #fcd34d; border-radius: 15px; padding: 20px; box-sizing: border-box; background-color: #ffffff; transition: transform 0.3s, box-shadow 0.3s;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px #fcd34d'"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                    <img src="assets/kenisabum.jfif" alt="Ken Kociban"
+                        style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                    <h3 style="margin-top:15px; color:#0582ca;">Ken Kociban</h3>
+                    <p>Dynamic Sales Leader</p>
+                </div>
+                <div style="width: 250px; border: 2px solid #ff1a1a; border-radius: 15px; padding: 20px; box-sizing: border-box; background-color: #ffffff; transition: transform 0.3s, box-shadow 0.3s;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px #ff1a1a'"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                    <img src="assets/tracie.jfif" alt="Tracie Whited"
+                        style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                    <h3 style="margin-top:15px; color:#0582ca;">Tracie Whited</h3>
+                    <p>Executive</p>
+                </div>
             </div>
-            <div style="width: 250px;">
-                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=300" alt="Executive 3" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
-                <h3 style="margin-top:15px; color:#0582ca;">John Smith</h3>
-                <p>VP of Sales</p>
+            <!-- Row 3 -->
+            <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                <div style="width: 250px; border: 2px solid #ae00ff; border-radius: 15px; padding: 20px; box-sizing: border-box; background-color: #ffffff; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;"
+                    onclick="window.location.href='mailto:dean@emergesales.com'"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px #ae00ff'"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                    <img src="assets/me.jpg" alt="Dean Sperduti"
+                        style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                    <h3 style="margin-top:15px; color:#0582ca;">Dean Sperduti</h3>
+                    <p>Digital Marketing & Web Developing</p>
+                </div>
+                <div style="width: 250px; border: 2px solid #ec4899; border-radius: 15px; padding: 20px; box-sizing: border-box; background-color: #ffffff; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;"
+                    onclick="window.location.href='mailto:elijah@emergesales.com'"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px #ec4899'"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                    <img src="assets/elliereal.jpg" alt="Elijah Kunda"
+                        style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                    <h3 style="margin-top:15px; color:#0582ca;">Elijah Kunda</h3>
+                    <p>Sales Operations & Campaign Coordinater</p>
+                </div>
             </div>
         </div>
     </section>
@@ -70,9 +125,10 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-left">
-                <h3>Mike Sperduti Companies</h3>
+                <img src="assets/complogo.png" alt="Mike Sperduti Companies" style="max-height: 60px;">
             </div>
         </div>
     </footer>
 </body>
+
 </html>
